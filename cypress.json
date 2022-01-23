@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://www.google.com/",
+    "viewportWidth": 1280,
+    "viewportHeight": 600,
+    "defaultCommandTimeout":60000,
+    "requestTimeout":100000,
+    "responseTimeout":100000,    
+    "integrationFolder": "cypress/integration",
+    "testFiles": "**/*.spec.js",
+    "reporterOptions": {
+        "mochaFile": "cypress/results/TestReport-[hash].xml",
+        "toConsole": true
+    }
+}
