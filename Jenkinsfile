@@ -1,18 +1,20 @@
 pipeline{
     agent any
-    stages('dependency'){
-        steps{
-            bat 'npm install'
+    stages{
+        stage('dependency'){
+            steps{
+                bat 'npm install'
+            }
         }
-    }
-    stages('test'){
-        steps{
-            bat 'npm run test'
+        stage('test'){
+            steps{
+                bat 'npm run test'
+            }
         }
-    }
-    stages('deploy'){
-        steps{
-            echo 'deploy'
+        stage('deploy'){
+            steps{
+                echo 'deploy'
+            }
         }
     }
 }
