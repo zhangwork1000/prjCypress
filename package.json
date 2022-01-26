@@ -8,9 +8,12 @@
   },
   "devDependencies": {},
   "scripts": {
+    "cypress": "cypress run --headless",
     "test": "npx cypress run",
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run",
+    "cyopen": "node_modules/.bin/cypress open",
+    "cyrun": "node_modules/.bin/cypress run"
   },
   "author": "",
   "license": "ISC"

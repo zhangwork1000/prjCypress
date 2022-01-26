@@ -1,19 +1,19 @@
 pipeline{
-    agent any
+    agent {dockerfile true}
     stages{
-        stage('dependency'){
+        stage('dependency & test'){
             steps{
-                bat 'npm install'
+                sh '''
+                    cd /kyc-idms-e2e-cypresss
+
+                    npm run test
+                '''
             }
         }
-        stage('test'){
+
+        stage('finish'){
             steps{
-                bat 'npm run test'
-            }
-        }
-        stage('deploy'){
-            steps{
-                echo 'deploy'
+                echo 'finish'
             }
         }
     }

@@ -6,6 +6,7 @@
     "requestTimeout":100000,
     "responseTimeout":100000,    
     "integrationFolder": "cypress/integration",
+    "reporter": "junit",
     "testFiles": "**/*.spec.js",
     "reporterOptions": {
         "mochaFile": "cypress/results/TestReport-[hash].xml",
